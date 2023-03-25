@@ -1,13 +1,12 @@
-import {useQuery} from 'react-query';
+import {useQuery, QueryClientProvider} from 'react-query';
 import axios from "axios";
-import TextField from '@mui/material/TextField';
-import { DataGrid, GridColDef } from '@mui/x-data-grid';
-import { Box, List, ListItem, ListItemAvatar, ListItemText, Paper, Typography } from '@mui/material';
+import { Box, Button, List, ListItem, ListItemAvatar, ListItemText, Paper, Typography } from '@mui/material';
 
 import CircularProgress from '@mui/material/CircularProgress';
 import Alert from '@mui/material/Alert';
 import React from 'react';
 import PersonIcon from '@mui/icons-material/Person';
+import { Link } from 'react-router-dom';
 
 
 export default function Usuarios () {
@@ -57,6 +56,11 @@ export default function Usuarios () {
             </div>
           ))}
       </Paper>
+      <Link to="/"> 
+      <Button variant="contained" >
+          Voltar
+      </Button>
+      </Link>
       
     </div>
   )
