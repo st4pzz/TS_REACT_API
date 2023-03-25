@@ -1,6 +1,7 @@
 import Usuarios from './Usuarios';
 import Box from '@mui/material/Box';
-import Paper, { Alert, CircularProgress } from '@mui/material';
+import { Alert, CircularProgress } from '@mui/material';
+import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
 import SendIcon from '@mui/icons-material/Send';
 import Button from '@mui/material/Button';
@@ -45,7 +46,7 @@ export default function Home () {
     
 return (
     <div>
-    
+    <Paper elevation={10}>
     <Box
       component="form"
       sx={{ display:'flex', justifyContent:'center', marginTop:30,
@@ -83,6 +84,7 @@ return (
       </div>
       
         </Box>
+        </Paper>
       </div>
     )
 }

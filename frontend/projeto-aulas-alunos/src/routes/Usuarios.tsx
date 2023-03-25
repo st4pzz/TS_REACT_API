@@ -1,4 +1,4 @@
-import {useQuery, QueryClientProvider} from 'react-query';
+import {useQuery} from 'react-query';
 import axios from "axios";
 import { Box, Button, List, ListItem, ListItemAvatar, ListItemText, Paper, Typography } from '@mui/material';
 

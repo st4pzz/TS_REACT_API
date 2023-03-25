@@ -5,12 +5,16 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import { Outlet } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import './index.css';
 
 const queryClient = new QueryClient();
 function App() {
   
   return (  
     <QueryClientProvider client={queryClient}>
+        <h1 className="text-3xl font-bold underline">
+        Hello world!
+        </h1>
     <div className="App">
       <Outlet/>
     </div>
@@ -18,4 +22,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
